@@ -1,0 +1,53 @@
+:root {
+    --bluegray: #ecf0f1; 
+
+} 
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+
+}
+
+#header {
+    background-color: var(--bluegray);
+    padding: 1.2rem 0;
+} 
+
+#header .header-wrapper .logo {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    font-weight: 600;
+} 
+
+#header .header-wrapper .logo a {
+    color: #123;
+    letter-spacing: 1.5;
+} 
+
+#header .header-wrapper .user-actions {
+    font-size:  1rem;
+    line-height: 1.5;
+    gap: 1rem;
+}
+
+#header .header-wrapper .user-actions .logout-btn {
+    cursor: pointer;
+    margin-left: 1.5rem;
+} 
+
+#header .header-wrapper .user-actions a {
+    color: #123;
+    margin-right: 1.2rem;
+    text-decoration: none;
+} 
+
+#header .header-wrapper .user-actions a:hover {
+    text-decoration-line: underline ;
+}
+
