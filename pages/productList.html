@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Cart - All Products</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/productList.css" />
+  </head>
+  <body>
+    <div id="productList">
+      <!-- Navbar -->
+      <nav id="header">
+        <div class="container">
+          <div class="row">
+            <div
+              class="header-wrapper d-flex justify-content-between align-items-start"
+            >
+              <div class="logo d-inline-block">
+                <a href="/index.html" class="text-decoration-none">Shop Cart</a>
+              </div>
+              <div class="user-actions d-flex flex-row">
+                <a href="./pages/cart.html">Cart</a>
+                <div class="user-intro" id="userIntro">Hi User</div>
+                <div class="logout-btn" id="logoutBtn">
+                  <a href="./login.html">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <h2 class="product-list-title text-center">All Products</h2>
+          <div class="product-list-wrapper d-flex flex-row">
+            <div class="product-list-sidebar d-flex flex-column">
+              <div class="sidebar-title">Search Products</div>
+              <div class="sidebar-search form-group">
+                <input
+                  type="text"
+                  placeholder="Search By Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="sidebar-title fw-bold">Categories</div>
+              <div id="categoryList">
+                <a href="#" class="d-flex text-decoration-none">All Products</a>
+                <a href="#" class="d-flex text-decoration-none">Electronics</a>
+                <a href="#" class="d-flex text-decoration-none">Kitechenware</a>
+                <a href="#" class="d-flex text-decoration-none">Women Outfit</a>
+                <a href="#" class="d-flex text-decoration-none">Men Outfit</a>
+                <a href="#" class="d-flex text-decoration-none">Sports</a>
+                <a href="#" class="d-flex text-decoration-none">Gaming</a>
+              </div>
+
+              <div class="sidebar-title">Filter by Price</div>
+              <div class="price-filter">
+                <div
+                  class="price-filter-select d-flex flex-row justify-content-between"
+                >
+                  <div class="form-group">
+                    <select name="minPrice" id="minPrice" class="form-select">
+                      <option value="0">0</option>
+                      <option value="1000">1000</option>
+                      <option value="2500">2500</option>
+                      <option value="5000">5000</option>
+                      <option value="10000">10000</option>
+                      <option value="20000">20000</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select name="maxPrice" id="maxPrice" class="form-select">
+                      <option value="0">0</option>
+                      <option value="1000">1000</option>
+                      <option value="2500">2500</option>
+                      <option value="5000">5000</option>
+                      <option value="10000">10000</option>
+                      <option value="20000">20000</option>
+                      <option value="100000">100000</option>
+                      <option value="150000">150000</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="price-filter-title d-flex flex-row justify-content-start"
+              >
+                <div id="price-filter-label-min">Min Price</div>
+                <div id="price-filter-label-max">Max Price</div>
+              </div>
+              <button class="btn btn-danger clear-filter">Clear Filters</button>
+            </div>
+            <div class="product-list-box" id="productList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
