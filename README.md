@@ -1,1 +1,1 @@
-# ECommerce Project in JS  
+# ECommerce Project  

@@ -25,7 +25,7 @@
                 <a href="/index.html" class="text-decoration-none">Shop Cart</a>
               </div>
               <div class="user-actions d-flex flex-row">
-                <a href="./pages/cart.html">Cart</a>
+                <a href="./cart.html">Cart</a>
                 <div class="user-intro" id="userIntro">Hi User</div>
                 <div class="logout-btn" id="logoutBtn">
                   <a href="./login.html">Login</a>
@@ -41,24 +41,74 @@
           <h2 class="cart-title text-center">Your Cart</h2>
           <div class="cart-wrapper d-flex flex-row">
             <div class="order-details d-flex flex-column" id="orderDetails">
+              <div class="order-details-title fw-bold">Order Details</div>
               <div class="order-details-product d-flex flex-row">
                 <div class="order-details-product-image d-flex">
-                  <img src="../src/images/product.jpg" alt="product image banner" />
+                  <img
+                    src="../src/images/product.jpg"
+                    alt="product image banner"
+                  />
                 </div>
 
-                <div class="order-details-product-data d-flex flex-column">
+                <div class="order-details-product-data d-flex flex-column justify-content-center">
                   <div>Some Product</div>
                   <div>&#8377; 10000</div>
                 </div>
 
                 <div class="order-details-product-actions d-flex flex-column">
-                  <div class="order-details-product-quantity"></div>
+                  <div class="order-details-product-quantity">
+                    <div class="fw-bold">Qunatity</div>
+                    <div class="form-group">
+                      <select name="" id="" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="order-details-product-remove btn btn-danger">
+                    Remove
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="order-details-product d-flex flex-row">
+                <div class="order-details-product-image d-flex">
+                  <img
+                    src="../src/images/product.jpg"
+                    alt="product image banner"
+                  />
+                </div>
+
+                <div class="order-details-product-data d-flex flex-column justify-content-center">
+                  <div>Some Product</div>
+                  <div>&#8377; 10000</div>
+                </div>
+
+                <div class="order-details-product-actions d-flex flex-column">
+                  <div class="order-details-product-quantity">
+                    <div class="fw-bold">Qunatity</div>
+                    <div class="form-group">
+                      <select name="" id="" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </div>
+                  </div>
                   <div class="order-details-product-remove btn btn-danger">
                     Remove
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="price-details d-flex flex-column" id="priceDetails">
               <div class="price-details-box">
                 <div class="price-detials-title fw-bold">Price Details</div>
@@ -89,16 +139,18 @@
                   </div>
                 </div>
               </div>
-              <a
-                href="productList.html"
-                class="continue-shopping-btn btn btn-info text-decoration-none"
-                >Continue Shopping</a
-              >
-              <a
-                href="checkout.html"
-                class="continue-shopping-btn btn btn-primary text-decoration-none"
-                >Checkout</a
-              >
+              <div class="price-details-btn-group">
+                <a
+                  href="productList.html"
+                  class="continue-shopping-btn btn btn-info text-decoration-none"
+                  >Continue Shopping</a
+                >
+                <a
+                  href="checkout.html"
+                  class="continue-shopping-btn btn btn-primary text-decoration-none"
+                  >Checkout</a
+                >
+              </div>
             </div>
           </div>
         </div>
